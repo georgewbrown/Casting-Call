@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './assets/SVG/logo.svg';
+import React, { useState, useCallback, Fragment } from 'react';
+import NavBar from './navbar/NavBar';
+import ActorButton from './ActorButton/ActorButton';
+import Search from './Search/Search';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  const [ userActors, setUserActors ] = useState([]);
 
+  const filteredActorsHandler = useCallback(filteredActors => {
+    setUserActors(filteredActors);
+  }, []);
+
+  return (
+    <Fragment>
+      <NavBar />
+      <div>
+      <Search onLoadActors={filteredActorsHandler}/>
+      <ActorButton />
+      </div>
+    </Fragment>
+  );
+ }
 export default App;

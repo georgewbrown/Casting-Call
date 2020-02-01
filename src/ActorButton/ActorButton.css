@@ -1,0 +1,9 @@
+.myButtonidk {
+    padding: 50px 60px;
+    background-color: white;
+    color: #00fc7e;
+    border: 0.09em solid #00fc7e;
+    border-radius: 8px;
+    margin: 2%;
+    font-size: 3em;
+}
