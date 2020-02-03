@@ -1,7 +1,7 @@
 import React, { useState, useCallback, Fragment } from 'react';
-import NavBar from './navbar/NavBar';
-import ActorButton from './ActorButton/ActorButton';
-import Search from './Search/Search';
+import NavBar from '../components/UI/Navbar/rb-Navbar';
+import ActorButton from '../components/Actor/ActorButton/ActorButton';
+import Search from '../components/Actor/Search/Search';
 import './App.css';
 
 function App() {

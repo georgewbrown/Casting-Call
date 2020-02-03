@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../assets/SVG/logo.svg';
-import './NavBar.css';
+import logo from '../../../assets/SVG/logo.svg';
+import './rb-Navbar.css';
 import { Navbar, Nav } from 'react-bootstrap';
 
 const NavBar = () => {
